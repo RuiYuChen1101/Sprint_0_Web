@@ -34,7 +34,7 @@ if ( hacerLogin( $nombre, $password) == true  ) {
   $objetoResultado->usuario = $nombre;
 
   // guardo en la sesión el nombre del usuario
-  session_start();
+ 
   $_SESSION["usuario"] = $_GET["nombre"];
 
 } else {
