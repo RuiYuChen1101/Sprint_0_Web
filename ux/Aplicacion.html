@@ -58,17 +58,21 @@ diHola( function( err, res ) {
 <script>
   function recuperarMedicionPulsado() {
 
-      // Your JavaScript code here
-      recuperarmedicion( function( err, res ) {
-        if ( err ) {
-        console.log( err );
-        
-        }else{
-          console.log(res);
+    recuperarmedicion(function (err, res) {
+      if (err) {
+        console.log(err);
+    } else {
+        console.log(res);
+        if (res.success === "1" && res.data && res.data.id && res.data.temperatura && res.data.co2) {
+            // The response appears to be in the expected structure
+            // You can directly access the data properties
+            var output = "ID: " + res.data.id + ", Temperatura: " + res.data.temperatura + ", CO2: " + res.data.co2;
+            document.getElementById("salida_medicion").innerHTML = output;
+        } else {
+            document.getElementById("salida_medicion").innerHTML = "Data structure is not as expected.";
         }
- 
-        
-      })
+    }
+    });
   }
 </script>
 
