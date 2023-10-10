@@ -28,7 +28,7 @@ function diHola( cb ) {
 			}
 
 			// no hay error, devuelvo el resultado
-			cb( null, resultado ) 
+			cb(  null,resultado ) 
 		}
 	}
 	
