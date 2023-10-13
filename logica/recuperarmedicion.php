@@ -1,5 +1,13 @@
+
 <?php
 
+// ---------------------------------------------------------------
+//
+// GET ../logica/recuperarmedicion.php
+//
+// error:Texto | (id:Int, temperatura:Double, co2:Double) : devuelto en un mismo JSON
+//
+// ---------------------------------------------------------------
 require_once '../../connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {

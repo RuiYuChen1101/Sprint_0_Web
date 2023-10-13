@@ -1,3 +1,12 @@
+// ---------------------------------------------------
+//
+// versión fake de una función de la lógica
+//
+// recuperarmedicion() ->   error:Texto | (id:Int, temperatura:Double, co2:Double)
+//
+// error:Texto | (id:Int, temperatura:Double, co2:Double) : devuelto via callback( err, res )
+//
+// ---------------------------------------------------
 function recuperarmedicion(cb) {
    
     var xmlhttp = new XMLHttpRequest();

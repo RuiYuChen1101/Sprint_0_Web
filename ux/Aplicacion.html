@@ -64,11 +64,12 @@ diHola( function( err, res ) {
     } else {
         console.log(res);
         if (res.success === "1" && Array.isArray(res.data)) {
-            // Check if the data is an array
+            
             var output = "<ul>";
             res.data.forEach(function (item) {
                 output += "<li>ID: " + item.id + ", Temperatura: " + item.temperatura + ", CO2: " + item.co2 + "</li>";
             });
+            
             output += "</ul>";
             document.getElementById("salida_medicion").innerHTML = output;
         } else {
@@ -100,7 +101,6 @@ diHola( function( err, res ) {
 <p>
 <button type="buton" onclick="loginPulsado()">Log in</button>
 <button type="button" onclick="diHolaPulsado()">Llamar hola</button>
-
 <p>
 
 <button onclick="recuperarMedicionPulsado()">Recuperar Medicion</button>
@@ -110,7 +110,4 @@ diHola( function( err, res ) {
 
 </body>
 </html>
-<!-- ---------------------------------------------------- -->
-<!-- ---------------------------------------------------- -->
-<!-- ---------------------------------------------------- -->
-<!-- ---------------------------------------------------- -->
+
