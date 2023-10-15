@@ -21,11 +21,6 @@ El objetivo principal de la parte de cliente web es que el usuario pueda logear 
 - Para establecer conexión con la base de datos, sigue los siguientes pasos:
     1. Ir a la carpeta xampp/htdocs
     2. crear un fichero connection.php
-    3. Copia el código: 
-    <?php
-        $conn = mysqli_connect("localhost","root","","sprint_0_servidor");
-        if($conn){}
-    else{echo "not connected";}
-    ?>
+    3. Copia el código: <?php $conn = mysqli_connect("localhost","root","","sprint_0_servidor"); if($conn){} else{echo "not connected";}?>
     4. Guardar los cambios y comprobar que se conecta
 
