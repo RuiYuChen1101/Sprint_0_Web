@@ -67,7 +67,7 @@ diHola( function( err, res ) {
             
             var output = "<ul>";
             res.data.forEach(function (item) {
-                output += "<li>ID: " + item.id + ", Temperatura: " + item.temperatura + ", CO2: " + item.co2 + "</li>";
+                output += "<li>ID: " + item.id + ", Temperatura: " + item.temperatura + ", CO2: " + item.co2 + ", latitud: " + item.latitud + ", longitud: " + item.longitud + "</li>";
             });
             
             output += "</ul>";
