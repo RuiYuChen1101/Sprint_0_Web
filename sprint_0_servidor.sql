@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 15, 2023 at 03:53 AM
+-- Generation Time: Oct 15, 2023 at 01:11 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -40,14 +40,8 @@ CREATE TABLE `medicion` (
 --
 
 INSERT INTO `medicion` (`id`, `temperatura`, `co2`, `latitud`, `longitud`) VALUES
-(10, 22, 22, 0, 0),
-(11, 22, 22, 0, 0),
-(14, 22, 22, 0, 0),
-(55, 888, 888, 0, 0),
-(57, 33, 88, 0, 0),
-(60, 88, 88, 0, 0),
-(61, 55, 55, 0, 0),
-(62, 182, 182, -0.157508, -0.15750833333333333);
+(2, 544, 80, 0, 0),
+(64, 927, 22, -0.15739, -0.15739);
 
 -- --------------------------------------------------------
 
@@ -92,7 +86,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `medicion`
 --
 ALTER TABLE `medicion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `usuario`
