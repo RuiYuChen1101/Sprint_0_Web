@@ -10,13 +10,15 @@
 // ---------------------------------------------------------------
 require_once 'connection.php';
 
+//Si el metodo es GET
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $response = array();
 
+    //Hago el query
     $query = "SELECT * FROM medicion";
-
     $result = mysqli_query($conn, $query);
 
+    //Si existe resultado en dentro de array data, respondo con el array data y success=1
     if ($result) {
        
         $data = array();
@@ -32,8 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         header('Content-Type: application/json');
         echo json_encode($response);
     } else {
-        
-        $response['error'] = 'Error fetching data from the database';
+        //No hay resultado, respondo con un mensaje
+        $response['message'] = 'No hay datos en db';
         echo json_encode($response);
     }
 } else {
